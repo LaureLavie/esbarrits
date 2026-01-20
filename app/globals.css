@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("../public/fonts/PlayfairDisplay-VariableFont_wght.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  src: url("../public/fonts/FiraSans-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Exo";
+  src: url("../public/fonts/Exo-VariableFont_wght.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  /* Couleurs principales */
+  --noir-charbon: #222222; /* Fonds, sections fortes */
+  --blanc-casse: #fffbf5; /* Textes, fonds clairs, lecture confortable */
+
+  /* Couleurs d’accent */
+  --rouge-bernais: #aa0101; /* Appels à l’action, pictos, accents (à utiliser avec parcimonie) */
+  --jaune-dore: #c7a109; /* Titres secondaires, séparateurs, bon contraste sur noir */
+
+  /* Couleurs secondaires / fonds alternés */
+  --beige-clair: #e0cfc6; /* Fonds alternés, respiration visuelle */
+
+  --font-titres:
+    "Playfair Display", serif; /* Titres de pages, sections, éléments patrimoniaux */
+  --font-corps: "Fira Sans", sans-serif; /* Paragraphes, listes, formulaires */
+  --font-ui: "Exo", sans-serif; /* Liens, boutons, navigation, filtres */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-titres);
+}
+
+body,
+p,
+li,
+input,
+textarea {
+  font-family: var(--font-corps);
+  font-size: 14px; /* Taille minimale mobile */
+}
+
+a,
+button,
+nav,
+.ui-element {
+  text-decoration: none;
+  font-family: var(--font-ui);
+}

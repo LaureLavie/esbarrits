@@ -1,0 +1,41 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--noir-charbon);
+  font-size: 15px;
+  font-family: var(--font-ui);
+  transition: all 0.3s ease;
+}
+
+nav img {
+  width: 60px;
+}
+
+.desktop {
+  display: none;
+}
+
+.mobile {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 10px;
+  background-color: var(--noir-charbon);
+  color: var(--blanc-casse);
+}
+
+.active {
+  color: var(--rouge-bernais);
+}
+
+@media (min-width: 768px) {
+  .desktop {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+}

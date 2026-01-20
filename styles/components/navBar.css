@@ -8,10 +8,12 @@ nav {
   font-size: 15px;
   font-family: var(--font-ui);
   transition: all 0.3s ease;
+  border-radius: 0 0 10px 10px;
 }
 
 nav img {
   width: 60px;
+  cursor: pointer;
 }
 
 .desktop {
@@ -37,5 +39,12 @@ nav img {
     display: flex;
     gap: 30px;
     align-items: center;
+    color: var(--blanc-casse);
+  }
+  .mobile {
+    display: none;
+  }
+  .burger {
+    display: none;
   }
 }

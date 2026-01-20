@@ -44,7 +44,7 @@ export default function Navbar() {
             </div>
 
             {/* Burger Menu Button */}
-            <div>
+            <div className='burger'>
 
                 <button
                     onClick={toggleMenu}

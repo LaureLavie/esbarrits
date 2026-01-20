@@ -17,8 +17,8 @@
 @font-face {
   font-family: "Exo";
   src: url("../public/fonts/Exo-VariableFont_wght.ttf");
-  font-weight: 600;
-  font-style: bold;
+  font-weight: 400;
+  font-style: normal;
 }
 
 :root {

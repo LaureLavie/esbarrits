@@ -43,7 +43,7 @@ export default function Navbar() {
                 <a href="/contact" className={pathname === '/contact' ? "active" : ""}>Contact</a>
             </div>
 
-            {/* Burger Menu Button */}
+            {/* Burger Menu Butto */}
             <div className='burger'>
 
                 <button

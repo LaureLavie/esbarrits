@@ -1,0 +1,52 @@
+.histoire-page{ 
+  padding: 2rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: var(--noir-charbon);
+}
+
+.histoire-header h1{
+  font-family: var(--font-titres);
+  font-size: 2rem;
+  color: var(--noir-charbon);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.histoire-header h2{
+  text-align: center;
+  color: var(--jaune-dore);
+  margin-bottom:3rem;
+}
+.histoire-events h2{
+  font-family: var(--font-titres);
+ font-size: 2rem;
+  text-align: center;
+  color: var(--jaune-dore);
+  margin-bottom:3rem;
+}
+
+.histoire-frise .frise-image{
+  width: 100%;
+  height: auto;
+  border-radius: 5%;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.histoire-text{
+  font-family: var(--font-corps);
+  color: var(--noir-charbon);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.histoire-text p{
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px){
+  .histoire-header h1{font-size:2.6rem}
+  .histoire-header h2{font-size:1.2rem}
+}

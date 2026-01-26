@@ -21,7 +21,7 @@ export default function Navbar() {
             <div>
                 <img
                     src={logo.src}
-                    alt="Esbarrits de Conesa"
+                    alt="Esbarrits de Cardessa"
                 />
             </div>
 

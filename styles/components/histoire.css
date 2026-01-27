@@ -1,6 +1,7 @@
 .histoire-page{ 
   padding: 2rem 2rem;
   max-width: 1000px;
+  align-content: center;
   margin: 0 auto;
   color: var(--noir-charbon);
 }

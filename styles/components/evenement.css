@@ -1,0 +1,108 @@
+.evenement-page{
+  padding: 2rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: var(--noir-charbon);
+}
+
+.event-header h1{
+  font-family: var(--font-titres);
+  font-size: 3rem;
+  color: var(--noir-charbon);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.event-header h2{
+  font-family: var(--font-titres);
+  font-size: 2rem;
+   text-align: center;
+   color: var(--jaune-dore);
+   margin-bottom:3rem;
+}
+
+.event-text{
+  font-family: var(--font-corps);
+  color: var(--noir-charbon);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.event-text p{font-size:1rem; margin-bottom:1rem}
+
+
+.event-gallery{
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 1.25rem 0 2rem;
+  justify-items: center; /* centre chaque item dans la grille */
+}
+
+.event-item{
+  background: var(--beige-clair);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 360px; /* largeur limitée pour centrer sur page */
+}
+
+.event-thumb{
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.event-caption{
+  padding: 12px 14px;
+}
+
+.event-caption h3{
+  margin: 0 0 6px 0;
+  font-family: var(--font-titres);
+  color: var(--noir-charbon);
+  font-size: 1.05rem;
+}
+
+.event-caption p{margin:0; color:#444; font-size:0.95rem}
+
+.event-actions{
+  padding: 12px 14px 18px;
+  display:flex;
+  gap:10px;
+  justify-content:flex-start;
+}
+
+.event-actions .Gold{
+  margin:0;
+}
+
+
+@media (min-width: 600px){
+  .event-gallery{ grid-template-columns: repeat(2, 1fr); }
+  .event-thumb{ height:220px }
+}
+@media (min-width: 1024px){
+  .event-gallery{ grid-template-columns: repeat(3, 1fr); }
+  .event-thumb{ height:180px }
+}
+
+/* bouton Gold central (au besoin) */
+button.Gold{
+  background: linear-gradient(105deg, var(--jaune-dore), #f8d668, var(--jaune-dore));
+  color: var(--noir-charbon);
+  border: none;
+  padding: 12px 28px;
+  border-radius: 28px;
+  box-shadow: 0.3rem rgba(196, 157, 3, 0.35);
+  font-weight: 600;
+  cursor: pointer;
+  display: block;
+  margin: 2rem auto;
+}

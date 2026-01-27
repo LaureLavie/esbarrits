@@ -2,9 +2,10 @@
 
 import '../styles/components/navBar.css';
 import { useState } from 'react';
-import logo from '../public/images/logo.png'; // Ajustez le chemin selon votre dossier
+import logo from '../public/images/logo.png';
 import burgerIcon from '../public/images/hamburger.webp';
 import { usePathname } from 'next/navigation';
+import Link from 'next/link';
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,12 +19,12 @@ export default function Navbar() {
     return (
         <nav>
             {/* Logo */}
-            <div>
+            <Link href="/">
                 <img
                     src={logo.src}
                     alt="Esbarrits de Cardessa"
                 />
-            </div>
+            </Link>
 
             {/* Menu Mobile */}
             {isMenuOpen && (

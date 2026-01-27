@@ -1,4 +1,4 @@
-export default function TestPage() {
+export default function RepertoirePage() {
     return (
         <div>
             <h1>Page Test</h1>

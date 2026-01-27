@@ -1,0 +1,104 @@
+.home-page{
+  padding: 2rem 2rem;
+  max-width: 1000px;
+  display:block;
+  align-content: center;
+  margin: 0 auto;
+  color: var(--noir-charbon);
+}
+
+.hero-group {
+  display: flex;
+  justify-self: center;
+  max-width: 70%;
+  border-radius: 6px;
+  margin: 2rem;
+}
+
+.home-header{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 1.25rem;
+  padding-top: 0; 
+}
+
+.home-header h1{
+  font-family: var(--font-titres);
+  font-size: 2rem;
+  color: var(--noir-charbon);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.home-header h2{
+  text-align: center;
+  color: var(--jaune-dore);
+  margin-bottom:3rem;
+  font-family: var(--font-titres);
+  font-size: 2rem;
+}
+
+button.Gold{
+  background: linear-gradient(105deg, var(--jaune-dore), #f8d668, var(--jaune-dore));
+  color: var(--noir-charbon);
+  border: none;
+  padding: 12px 28px;
+  border-radius: 28px;
+  box-shadow: 0.3rem rgba(196, 157, 3, 0.35);
+  font-weight: 600;
+  cursor: pointer;
+  display: block;
+  margin: 2rem auto;
+}
+
+/* Image du groupe */
+.groupe_esbarrits{
+  display: flex;
+  justify-self: center;
+  width: 50%;
+  height: auto;
+  border-radius: 6px;
+  margin:2rem;
+}
+
+.home-text{
+  font-family: var(--font-corps);
+  color: var(--noir-charbon);
+  line-height: 1.6;
+  margin-top: 2rem;
+}
+
+.home-text p{
+  font-size: 1rem;
+  margin-top: 2rem;}
+
+/* Composant event-card */
+.eventcard{
+  display: block;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.event-card-header{background: linear-gradient(90deg, var(--rouge-bernais), #cc3939); padding: 10px}
+.event-date{color: white; font-weight:700; text-align:center; padding:6px 10px; border-radius:6px}
+
+.event-card-body{padding: 14px 18px}
+.event-line{display:flex; align-items:center; gap:10px; margin:8px 0; color:#333}
+.event-excerpt{color:#666; margin-top:8px}
+
+.event-card-footer{padding: 12px 18px; display:flex; justify-content:flex-start}
+.event-more{background:transparent; border:none; color:var(--rouge-bernais); font-weight:600; cursor:pointer}
+
+@media (min-width: 768px){
+  .home-header h1{font-size:2.2rem}
+  .event-card{margin-left:0}
+}
+
+/* placeholder pour bannière home.png */
+.home-banner{width:100%; overflow:hidden; position:relative}
+.home-banner img{width:100%; height:auto; display:block; opacity:0.95}

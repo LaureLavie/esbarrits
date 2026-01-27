@@ -23,7 +23,7 @@ export default function HistoirePage() {
           </p>
 
           <p>
-          Los Esbarrits de Cardessa, c'est avant tout une grande famille unie par l'amour du chant traditionnel béarnais. 
+          Los Esbarrits de Cardesse, c'est avant tout une grande famille unie par l'amour du chant traditionnel béarnais. 
 
 Depuis plus d'un demi-siècle, nous perpétuons avec fierté et authenticité les mélodies et les textes qui ont façonné l'identité de notre belle région.
           </p>
@@ -35,7 +35,7 @@ Depuis plus d'un demi-siècle, nous perpétuons avec fierté et authenticité le
 
         <section className="histoire-events">
         <h2> Nos sorties, nos évènements... </h2>
-        <button className='Gold' onClick={() => window.location.href = '/'}>Nos évènements</button>
+        <button className='Gold' onClick={() => window.location.href = '/evenement'}>Nos évènements</button>
         </section>
       </main>
 

@@ -31,6 +31,7 @@ export default function Navbar() {
                     <a href="/" className={pathname === '/' ? "active" : ""}>Accueil</a>
                     <a href="/histoire" className={pathname === '/histoire' ? "active" : ""}>Notre histoire</a>
                     <a href="/repertoire" className={pathname === '/repertoire' ? "active" : ""}>Notre répertoire</a>
+                    <a href="/evenement" className={pathname === '/evenement'?"active":""}>Nos évènements</a>
                     <a href="/contact" className={pathname === '/contact' ? "active" : ""}>Contact</a>
                 </div>
             )}
@@ -40,6 +41,7 @@ export default function Navbar() {
                 <a href="/" className={pathname === '/' ? "active" : ""}>Accueil</a>
                 <a href="/histoire" className={pathname === '/histoire' ? "active" : ""}>Notre histoire</a>
                 <a href="/repertoire" className={pathname === '/repertoire' ? "active" : ""}>Notre répertoire</a>
+                <a href="/evenement" className={pathname === '/evenement'?"active":""}>Nos évènements</a>
                 <a href="/contact" className={pathname === '/contact' ? "active" : ""}>Contact</a>
             </div>
 

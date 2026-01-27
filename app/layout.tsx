@@ -3,7 +3,7 @@ import "./globals.css";
 
 
 export const metadata: Metadata = {
-  title: "Create Next App",
+  title: "Esbarrits de Cardessa - Site officiel",
   description: "",
 };
 

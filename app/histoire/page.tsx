@@ -1,3 +1,5 @@
+'use client';
+
 import Navbar from '@/components/NavBar';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
@@ -33,7 +35,7 @@ Depuis plus d'un demi-siècle, nous perpétuons avec fierté et authenticité le
 
         <section className="histoire-events">
         <h2> Nos sorties, nos évènements... </h2>
-        <button className='events'>Evènements</button>
+        <button className='Gold' onClick={() => window.location.href = '/'}>Nos évènements</button>
         </section>
       </main>
 

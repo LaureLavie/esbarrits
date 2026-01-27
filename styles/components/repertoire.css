@@ -1,0 +1,108 @@
+
+.histoire-page {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  color: var(--noir-charbon);
+}
+
+.histoire-header h1 {
+  font-family: var(--font-titres);
+  font-size: 2.5rem;
+  color: var(--noir-charbon);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.histoire-page h2 {
+  font-family: var(--font-titres);
+  font-size: 1.8rem;
+  text-align: center;
+  color: var(--jaune-dore);
+  margin: 1.5rem 0;
+}
+
+.histoire-text {
+  font-family: var(--font-corps);
+  color: var(--noir-charbon);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.histoire-text p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Styles pour la page répertoire */
+.repertoire-page{
+  padding: 2rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: var(--noir-charbon);
+}
+
+.repertoire-header h1{
+  font-family: var(--font-titres);
+  font-size: 2rem;
+  color: var(--noir-charbon);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.repertoire-page h2{
+  font-family: var(--font-titres);
+  font-size: 1.6rem;
+  text-align: center;
+  color: var(--jaune-dore);
+  margin: 1.75rem 0;
+}
+
+.repertoire-text{
+  font-family: var(--font-corps);
+  color: var(--noir-charbon);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.repertoire-text p{
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Section contenant les lecteurs audio */
+.sound{
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0 2rem;
+}
+
+.sound iframe{
+  width: 80%;
+  max-width: 900px;
+  height: 450px;
+  border: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+}
+
+/* Bouton Gold (au cas où) */
+button.Gold{
+  background: linear-gradient(105deg, var(--jaune-dore), #f8d668, var(--jaune-dore));
+  color: var(--noir-charbon);
+  border: none;
+  padding: 12px 28px;
+  border-radius: 28px;
+  box-shadow: 0 6px 14px rgba(199,161,9,0.18);
+  font-weight: 600;
+  cursor: pointer;
+  display: block;
+  margin: 2rem auto;
+}
+
+@media (min-width: 768px){
+  .repertoire-header h1{font-size:2.6rem}
+  .repertoire-page h2{font-size:1.4rem}
+  .sound iframe{height: 500px}
+}

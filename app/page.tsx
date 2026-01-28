@@ -3,23 +3,19 @@
 import Image from 'next/image';
 import Navbar from "@/components/NavBar";
 import Footer from "@/components/Footer";
-import groupe_esbarrits from '../public/images/groupe_esbarrits.png';
-import hero_group from '../public/images/hero_group.png';
 import EventCard from '@/components/EventCard';
+import hero_group from '../public/images/hero_group.png';
+import sample1 from '../public/images/sample1.jpg';
 import '../styles/components/home.css';
 
 export default function Page() {
-  const sampleEvent = {
-    dateTitle: 'Samedi 02 Décembre 2024',
-    location: 'Lagor',
-    time: '12h30-18h',
-    price: 'Libre participation',
-    excerpt: "Animations, musique et convivialité."
-  };
+
+  const sampleEvent = [
+    { id: 1, dateTitle: 'Samedi 02 Décembre 2024', location:'Lagor', time:'12h30-18h', price:'Libre participation', excerpt: 'Animations, musique et convivialité.', image: sample1, link: 'https://photos.app.goo.gl/dCQxYKieb6aZ9QN2A' },
+  ];
 
   const handleMore = () => {
-    // placeholder pour ouvrir une modal ou naviguer vers une page événement
-    alert("Plus d'infos bientôt disponibles");
+        alert("Plus d'infos bientôt disponibles");
   };
 
   return(
@@ -34,20 +30,22 @@ export default function Page() {
         <header className="home-header">
           <h1>Prochains évènements</h1>
           <div className='eventcard'>
-          <EventCard
-            dateTitle={sampleEvent.dateTitle}
-            location={sampleEvent.location}
-            time={sampleEvent.time}
-            price={sampleEvent.price}
-            excerpt={sampleEvent.excerpt}
-            onMore={handleMore}
-          />
+            {sampleEvent.map(evt => (
+              <EventCard
+                key={evt.id}                
+                dateTitle={evt.dateTitle}
+                location={evt.location}
+                time={evt.time}
+                price={evt.price}
+                excerpt={evt.excerpt}
+                image={evt.image}
+                link={evt.link}
+              />
+            ))}
           </div>
 
           <h2>Plus de 50 ans de tradition</h2>
         </header>
-       
-          <Image src={groupe_esbarrits} alt="Groupe Esbarrits" className="groupe_esbarrits" />
        
         <section className="home-text">
           <p>Fondé en 1970 à Cardesse, Los Esbarrits perpétuent avec passion la tradition du chant béarnais.</p>

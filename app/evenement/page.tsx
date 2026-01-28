@@ -3,6 +3,7 @@
 import Navbar from '@/components/NavBar';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
+import EventCard from '@/components/EventCard';
 import '../../styles/components/evenement.css';
 import sample1 from '../../public/images/sample1.jpg';
 import sample2 from '../../public/images/sample2.jpg';
@@ -32,16 +33,13 @@ export default function EventPage() {
 
         <section className="event-gallery">
           {items.map(item => (
-            <article key={item.id} className="event-item">
-              <Image src={item.img} alt={item.title} className="event-thumb" />
-              <div className="event-caption">
-                <h3>{item.title}</h3>
-                <p>{item.excerpt}</p>
-              </div>
-              <div className="event-actions">
-                <button className="Gold" onClick={() => window.open(item.link, '_blank')}>Voir l'album</button>
-              </div>
-            </article>
+            <EventCard
+              key={item.id}
+              title={item.title}
+              excerpt={item.excerpt}
+              image={item.img}
+              link={item.link}
+            />
           ))}
         </section>
 

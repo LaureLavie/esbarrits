@@ -17,11 +17,16 @@ export async function POST(request: NextRequest) {
 
     // Configurez vos paramètres d'email ici
     const transporter = nodemailer.createTransport({
-      service: 'gmail',
+      host: 'smtp.gmail.com',
+      port: 587,
+      secure: false,
       auth: {
         user: SMTP_USER,
-        pass: SMTP_PASS,
+        pass: SMTP_PASS, // Utilisez le App Password ici
       },
+      tls: {
+        rejectUnauthorized: false
+      }
     });
 
     // Email à l'administrateur

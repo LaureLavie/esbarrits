@@ -1,33 +1,58 @@
 'use client';
 
+import Image from 'next/image';
 import React from 'react';
 
 type EventCardProps = {
-  dateTitle: string;
+  id?: number | string;
+  dateTitle?: string; 
+  title?: string;
   location?: string;
   time?: string;
   price?: string;
   excerpt?: string;
-  onMore?: () => void;
+  image?: any;
+  link?: string; 
 };
 
-export default function EventCard({ dateTitle, location, time, price, excerpt, onMore }: EventCardProps) {
-  return (
-    <article className="event-card">
-      <header className="event-card-header">
-        <div className="event-date">{dateTitle}</div>
-      </header>
+export default function EventCard({
+  dateTitle,
+  title,
+  location,
+  time,
+  price,
+  excerpt,
+  image,
+  link,
+}: EventCardProps) {
+  const handleClick = () => {
+    if (link) return window.open(link, '_blank');
+  };
 
-      <div className="event-card-body">
-        {location && <p className="event-line"><span className="event-icon">📍</span>{location}</p>}
-        {time && <p className="event-line"><span className="event-icon">🕒</span>{time}</p>}
-        {price && <p className="event-line"><span className="event-icon">€</span>{price}</p>}
-        {excerpt && <p className="event-excerpt">{excerpt}</p>}
+  return (
+    <article className="event-item">
+      {image ? (
+        <Image src={image} alt={title || dateTitle || 'évènement'} className="event-thumb" />
+      ) : (
+        <div className="event-thumb" style={{background:'#eee'}} />
+      )}
+
+      <div className="event-caption">
+        <h3>{title || dateTitle}</h3>
+        {dateTitle && title && <p className="event-subtitle">{dateTitle}</p>}
+        {excerpt && <p>{excerpt}</p>}
+        <div style={{marginTop:8}}>
+          {location && <span style={{marginRight:12}}>📍 {location}</span>}
+          {time && <span style={{marginRight:12}}>🕒 {time}</span>}
+          {price && <span>€ {price}</span>}
+        </div>
       </div>
 
-      <footer className="event-card-footer">
-        <button className="event-more" onClick={onMore}>Plus d'infos</button>
-      </footer>
+      <div className="event-actions">
+        <button className="Gold" onClick={handleClick}>
+          {link ? 'Voir l\'album' : 'Plus d\'infos'}
+        </button>
+      </div>
     </article>
   );
 }

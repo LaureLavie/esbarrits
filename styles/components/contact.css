@@ -2,6 +2,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 section {
   padding: 10dvh 1rem 10dvh 1rem;
 }
@@ -41,7 +42,8 @@ h1 {
 .address-section {
   display: flex;
   width: 80%;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 2rem;
   padding: 5dvh;
 }
  form {
@@ -112,6 +114,34 @@ button.Gold {
   cursor: pointer;
   display: block;
   margin: 2rem auto;
+}
+
+/* Conteneur central du formulaire et informations */
+.contact-content {
+  width: 100%;
+  max-width: 900px; /* largeur demandée */
+  margin: 0 auto; /* centre horizontalement */
+  padding: 2rem 1rem; /* respiration interne */
+  box-sizing: border-box;
+}
+
+/* S'assurer que le formulaire n'excède pas le conteneur */
+.contact-form {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Adapter les sections d'information pour rester à l'intérieur du conteneur */
+.contact-info-box,
+.address-section {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (min-width: 900px) {
+  /* espacement interne plus généreux sur desktop */
+  .contact-content { padding: 3rem 2rem; }
+  .contact-info-box { display: flex; gap: 1.25rem; }
 }
 
 @media (min-width: 600px){

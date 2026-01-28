@@ -1,12 +1,12 @@
 
-.histoire-page {
+.repertoire-page {
   padding: 2rem;
   max-width: 800px;
   margin: 0 auto;
   color: var(--noir-charbon);
 }
 
-.histoire-header h1 {
+.repertoire-header h1 {
   font-family: var(--font-titres);
   font-size: 2.5rem;
   color: var(--noir-charbon);
@@ -14,7 +14,7 @@
   margin-bottom: 2rem;
 }
 
-.histoire-page h2 {
+.repertoire-page h2 {
   font-family: var(--font-titres);
   font-size: 1.8rem;
   text-align: center;
@@ -22,52 +22,17 @@
   margin: 1.5rem 0;
 }
 
-.histoire-text {
+.repertoire-text {
   font-family: var(--font-corps);
   color: var(--noir-charbon);
   line-height: 1.6;
   margin-bottom: 2rem;
 }
 
-.histoire-text p {
+.repertoire-text p {
   font-size: 1rem;
   margin-bottom: 1rem;
-}
-
-/* Styles pour la page répertoire */
-.repertoire-page{
-  padding: 2rem 2rem;
-  max-width: 1000px;
-  margin: 0 auto;
-  color: var(--noir-charbon);
-}
-
-.repertoire-header h1{
-  font-family: var(--font-titres);
-  font-size: 2rem;
-  color: var(--noir-charbon);
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.repertoire-page h2{
-  font-family: var(--font-titres);
-  font-size: 1.6rem;
-  text-align: center;
-  color: var(--jaune-dore);
-  margin: 1.75rem 0;
-}
-
-.repertoire-text{
-  font-family: var(--font-corps);
-  color: var(--noir-charbon);
-  line-height: 1.6;
-  margin-bottom: 2rem;
-}
-
-.repertoire-text p{
-  font-size: 1rem;
-  margin-bottom: 1rem;
+  text-align: justify;
 }
 
 /* Section contenant les lecteurs audio */
@@ -80,7 +45,7 @@
 .sound iframe{
   width: 80%;
   max-width: 900px;
-  height: 450px;
+  height: 350px;
   border: 0;
   overflow: hidden;
   border-radius: 8px;

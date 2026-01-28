@@ -2,9 +2,9 @@
 
 import Navbar from '@/components/NavBar';
 import Footer from '@/components/Footer';
-import Image from 'next/image';
 import EventCard from '@/components/EventCard';
 import '../../styles/components/evenement.css';
+import '../../styles/components/evencard.css';
 import sample1 from '../../public/images/sample1.jpg';
 import sample2 from '../../public/images/sample2.jpg';
 import sample3 from '../../public/images/sample3.jpg';
@@ -27,7 +27,7 @@ export default function EventPage() {
 
         <section className="event-text">
           <p>
-            Retrouvez nos albums photos et reportages. Cliquez sur une vignette pour ouvrir l'album.
+            Retrouvez nos albums photos des évènements et sorties.
           </p>
         </section>
 

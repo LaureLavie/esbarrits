@@ -121,7 +121,7 @@ export default function ContactPage() {
           </div>
 
           <div className="form-group">
-            <label htmlFor="nom" className="form-label">Nom *</label>
+            <label htmlFor="nom" className="form-label">Nom Prénom*</label>
             <input
               type="text"
               id="nom"
@@ -174,7 +174,7 @@ export default function ContactPage() {
             />
           </div>
 
-          <button type="submit" className="submit-button">
+          <button type="submit" className="Gold">
             Envoyer la demande
           </button>
         </form>

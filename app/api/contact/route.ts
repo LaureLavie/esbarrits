@@ -6,19 +6,28 @@ export async function POST(request: NextRequest) {
     const formData = await request.json();
     const { nom, email, telephone, message, requestType } = formData;
 
+    // Vérification des variables d'environnement SMTP
+    const SMTP_USER = process.env.EMAIL_USER;
+    const SMTP_PASS = process.env.EMAIL_PASS;
+
+    if (!SMTP_USER || !SMTP_PASS) {
+      console.error('SMTP credentials missing', { SMTP_USER: !!SMTP_USER, SMTP_PASS: !!SMTP_PASS });
+      return NextResponse.json({ error: 'SMTP credentials manquantes côté serveur' }, { status: 500 });
+    }
+
     // Configurez vos paramètres d'email ici
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASSWORD,
+        user: SMTP_USER,
+        pass: SMTP_PASS,
       },
     });
 
     // Email à l'administrateur
     const adminMailOptions = {
-      from: process.env.EMAIL_USER,
-      to: 'admin@example.com', // Remplacez par l'email de destination
+      from: SMTP_USER,
+      to: 'laure.lavie@gmail.com', 
       subject: `Nouvelle demande de contact - ${requestType}`,
       html: `
         <h2>Nouvelle demande de contact</h2>
@@ -33,7 +42,7 @@ export async function POST(request: NextRequest) {
 
     // Email de confirmation au client
     const clientMailOptions = {
-      from: process.env.EMAIL_USER,
+      from: SMTP_USER,
       to: email,
       subject: 'Confirmation de réception - Esbarrits',
       html: `

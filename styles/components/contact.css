@@ -96,3 +96,27 @@ form textarea {
   cursor: pointer;
   align-self: center;
 }
+button.Gold {
+  background: linear-gradient(
+    105deg,
+    var(--jaune-dore),
+    #f8d668,
+    var(--jaune-dore)
+  );
+  color: var(--noir-charbon);
+  border: none;
+  padding: 12px 28px;
+  border-radius: 28px;
+  box-shadow: 0.3rem rgba(196, 157, 3, 0.35);
+  font-weight: 600;
+  cursor: pointer;
+  display: block;
+  margin: 2rem auto;
+}
+
+@media (min-width: 600px){
+.address-section {
+  width: 100%;
+  gap: 5dvw;
+  justify-content: center;
+}}

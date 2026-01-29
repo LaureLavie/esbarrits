@@ -10,44 +10,32 @@
 
 
 .home-banner {
-  width: 100vw; 
-  margin-left: calc(50% - 50vw); /* aligne la bannière en full-bleed même dans un container centré */
-  margin-right: calc(50% - 50vw);
+  width: 100dvw; 
+  margin-left: calc(50% - 50dvw); /* aligne la bannière en full-bleed même dans un container centré */
+  margin-right: calc(50% - 50dvw);
   overflow: hidden;
   position: relative;
- max-height: 500px; 
 }
 
-/* L'image doit couvrir la bannière et rester responsive */
-.home-banner .hero-group,
-.home-banner img.hero-group {
-  width: 100%;
-  height: 500px; /* hauteur par défaut sur mobile/tablette */
-  object-fit: cover; /* crop si nécessaire pour garder le ratio */
+
+.hero-group {
+  width: 100dvw;
+  object-fit: cover; 
   display: block;
 }
 
 @media (min-width: 900px) {
-  .home-banner {
-    max-height: 640px;
+  .hero-group {
+    width: 100dvw;
   }
-  .home-banner .hero-group,
-  .home-banner img.hero-group {
-    height: 560px; /* hauteur plus grande sur desktop */
-  }
+ 
 }
 
-.home-banner img {
-  width: 100%;
-  height: auto;
-  display: block;
-  opacity: 0.90;
-}
 
 .hero-group {
   display: flex;
   justify-self: center;
-  width: 100%;
+  width: 100dvw;
   border-radius: 6px;
   margin-bottom: 2rem;
 }
@@ -93,15 +81,6 @@ button.Gold {
   margin: 2rem auto;
 }
 
-/* Image du groupe */
-.groupe_esbarrits {
-  display: flex;
-  justify-self: center;
-  width: 50%;
-  height: auto;
-  border-radius: 6px;
-
-}
 
 .home-text {
   font-family: var(--font-corps);

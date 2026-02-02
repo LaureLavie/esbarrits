@@ -4,6 +4,7 @@ import '../styles/components/navBar.css';
 import '../styles/components/footer.css';
 import Image from 'next/image';
 import logo from '../public/images/logo.png';
+import icoFB from '../public/images/icoFB.png';
 
 export default function Footer() {
   return (
@@ -12,9 +13,15 @@ export default function Footer() {
 
         <div className="footer-info">
           <p><strong>Les Esbarrits de Cardesse</strong></p>
-          <p>📞 06 29 82 15 30</p>
-          <p>✉️ <a href="mailto:contact@esbarrits.fr">jeanlouis.laffargue@sfr.fr</a></p>
-          <p>📍 Cardesse, 64360</p>
+          <a
+          className="footer-fb"
+          href="https://www.facebook.com/Esbarrits"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Page Facebook Les Esbarrits de Cardesse"
+        >
+          <Image src={icoFB} alt="Facebook Esbarrits" className="picto Reseaux" width={24} height={24} />
+        </a>
         </div>
 
         <div className="footer-bottom">

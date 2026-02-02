@@ -69,5 +69,5 @@ button.Gold{
 @media (min-width: 768px){
   .repertoire-header h1{font-size:2.6rem}
   .repertoire-page h2{font-size:1.4rem}
-  .sound iframe{height: 500px}
+  .sound iframe{height: 400px}
 }

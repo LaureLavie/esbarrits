@@ -17,7 +17,34 @@
   margin-top: 1rem;
   color: var(--blanc-casse);
   line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  align-items: center;
 }
+
+/* Lien Facebook */
+.footer-fb {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: var(--blanc-casse);
+  text-decoration: none;
+  border-radius: 8px;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.footer-fb .picto {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.footer-fb:hover {
+  color: var(--jaune-dore);
+  background: rgba(173, 184, 18, 0.04);
+}
+
 .footer-bottom {
   margin-top: 1rem;
   color: rgba(255,255,255,0.75);

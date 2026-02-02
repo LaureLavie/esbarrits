@@ -50,7 +50,7 @@ export default function EventCard({
 
       <div className="event-actions">
         <button className="Gold" onClick={handleClick}>
-          {link ? 'Voir l\'album' : 'Plus d\'infos'}
+          En savoir plus
         </button>
       </div>
     </article>

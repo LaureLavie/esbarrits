@@ -38,9 +38,9 @@
 
 .agenda-card-image {
   width: 100%;
-  height: 200px;
+  height: auto;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 12px;
   margin-bottom: 1rem;
 }
 
@@ -83,24 +83,26 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7); 
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  animation: fadeIn 0.3s ease-in-out;
 }
 
 .popup-content {
-  background: white;
+  background: var(--beige-clair); 
   padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  max-width: 500px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3); 
+  max-width: 600px;
   width: 90%;
   position: relative;
   text-align: left;
   font-family: var(--font-corps);
   color: var(--noir-charbon);
+  animation: slideIn 0.3s ease-in-out;
 }
 
 .popup-close {
@@ -109,11 +111,45 @@
   right: 10px;
   background: none;
   border: none;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   cursor: pointer;
   color: var(--rouge-bernais);
+  transition: color 0.3s ease;
 }
 
 .popup-close:hover {
   color: var(--jaune-dore);
+}
+
+.popup-content h3 {
+  font-family: var(--font-corps);
+  font-size: 1.5rem;
+  color: var(--rouge-bernais);
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.popup-content p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(0);
+  }
 }

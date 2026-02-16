@@ -1,0 +1,119 @@
+/* Agenda Card Styles */
+.agenda-card {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(90deg, var(--beige-clair), #f0e1b2, var(--beige-clair));
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  max-width: 400px;
+  margin: 1rem auto;
+}
+
+.agenda-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.agenda-card-header {
+  background-color: var(--rouge-bernais);
+  border-radius: 12px 12px 0 0;
+  width:100%;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-family: var(--font-titres);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.agenda-card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.agenda-card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.agenda-card-details {
+  text-align: left;
+  font-family: var(--font-corps);
+  color: var(--noir-charbon);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.agenda-card-details p {
+  margin: 0.5rem 0;
+}
+
+.agenda-card-footer {
+  text-align: center;
+  padding: 1rem;
+}
+
+.agenda-card-button {
+  background: var(--jaune-dore);
+  color: var(--noir-charbon);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.agenda-card-button:hover {
+  background: #f8d668;
+}
+
+/* Popup styles */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+  text-align: left;
+  font-family: var(--font-corps);
+  color: var(--noir-charbon);
+}
+
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--rouge-bernais);
+}
+
+.popup-close:hover {
+  color: var(--jaune-dore);
+}

@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import Navbar from "@/components/NavBar";
 import Footer from "@/components/Footer";
-import EventCard from '@/components/EventCard';
+import AgendaCard from '@/components/AgendaCard';
 import hero_group from '../public/images/hero_group.png';
 import choraleallemande from '../public/images/choraleallemande.jpg';
 import '../styles/components/home.css';
@@ -13,7 +13,7 @@ import groupe from '../public/images/groupe.jpg';
 export default function Page() {
 
   const sampleEvent = [
-    { id: 1, dateTitle: 'Juin 2026', location:'Allemagne', time:'Tout le weekend', price:'Libre participation', excerpt: 'Animation & Concert en Allemagne', image: choraleallemande, link: 'https://photos.app.goo.gl/dCQxYKieb6aZ9QN2A' },
+    { id: 1, date: 'Du 11 au 18 juin 2026', location: 'Allemagne', time: 'Toute la semaine', price: 'Libre participation', description: 'Animation & Concert en Allemagne', image: choraleallemande, link: 'https://photos.app.goo.gl/dCQxYKieb6aZ9QN2A' },
   ];
 
   const handleMore = () => {
@@ -32,18 +32,18 @@ export default function Page() {
         <header className="home-header">
           <h1>Prochains évènements</h1>
           <p>Parce que la musique ne vit que si elle est partagée,</p>
-          <p> les Esbarrits adorent quitter les répétitions pour venir à votre rencontre ! </p>
+          <p>les Esbarrits adorent quitter les répétitions pour venir à votre rencontre !</p>
           <p className='textBold'>Bloquez vos agendas : </p>
           
-          <div className='eventcard'>
+          <div>
             {sampleEvent.map(evt => (
-              <EventCard
-                key={evt.id}                
-                dateTitle={evt.dateTitle}
+              <AgendaCard
+                key={evt.id}
+                date={evt.date}
                 location={evt.location}
                 time={evt.time}
                 price={evt.price}
-                excerpt={evt.excerpt}
+                description={evt.description}
                 image={evt.image}
                 link={evt.link}
               />

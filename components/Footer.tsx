@@ -30,6 +30,9 @@ export default function Footer() {
             <li>
               <a href="/mentions-legales" className="footer-link">Mentions légales</a>
             </li>
+            <li>
+              <a href="/confidentialite" className="footer-link">Politique de confidentialité</a>
+            </li>
           </ul>
         </div>
 

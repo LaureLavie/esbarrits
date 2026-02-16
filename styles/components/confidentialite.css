@@ -1,0 +1,63 @@
+/* Politique de Confidentialité */
+.politique-confidentialite {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: var(--noir-charbon);
+  font-family: var(--font-corps);
+  line-height: 1.6;
+}
+
+.politique-confidentialite h1 {
+  text-align: center;
+  color: var(--jaune-dore);
+  font-family: var(--font-titres);
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.politique-confidentialite h2 {
+  color: var(--jaune-dore);
+  font-family: var(--font-titres);
+  font-size: 1.8rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.politique-confidentialite h3 {
+  color: var(--noir-charbon);
+  font-family: var(--font-titres);
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.politique-confidentialite p {
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.politique-confidentialite ul {
+  margin-left: 2rem;
+  list-style: disc;
+}
+
+.politique-confidentialite ul li {
+  margin-bottom: 0.75rem;
+}
+
+.politique-confidentialite a {
+  color: var(--bleu-lien);
+  text-decoration: underline;
+}
+
+.politique-confidentialite a:hover {
+  color: var(--jaune-dore);
+  text-decoration: none;
+}
+
+.politique-confidentialite hr {
+  border: none;
+  border-top: 1px solid var(--gris-clair);
+  margin: 2.5rem 0;
+}

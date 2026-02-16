@@ -73,15 +73,15 @@ export default function ContactPage() {
           </div>
           
           <div className="contact-info-section">
-            <strong>Trésorière :</strong>
-            <p>Fabienne Thiarc : 06.46.41.95.76 /</p>
-            <p>fabiennethiarc@yahoo.fr</p>
-          </div>
-          
-          <div className="contact-info-section">
             <strong>Président :</strong>
             <p>Jean-Louis Laffargue: 06.29.82.15.30 /</p>
             <p>jeanlouis.laffargue@sfr.fr</p>
+          </div>
+          
+          <div className="contact-info-section">
+            <strong>Trésorière :</strong>
+            <p>Fabienne Thiarc : 06.46.41.95.76 /</p>
+            <p>fabiennethiarc@yahoo.fr</p>
           </div>
         </div>
 

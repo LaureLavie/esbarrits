@@ -43,9 +43,9 @@
 }
 
 .sound iframe{
-  width: 80%;
+  width: 100%;
   max-width: 900px;
-  height: 350px;
+  height: 300px;
   border: 0;
   overflow: hidden;
   border-radius: 8px;
@@ -69,5 +69,5 @@ button.Gold{
 @media (min-width: 768px){
   .repertoire-header h1{font-size:2.6rem}
   .repertoire-page h2{font-size:1.4rem}
-  .sound iframe{height: 400px}
+  .sound iframe{height: 300px}
 }

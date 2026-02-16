@@ -1,0 +1,39 @@
+/* Mentions légales */
+.mentions-legales {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: var(--noir-charbon);
+  font-family: var(--font-corps);
+  line-height: 1.6;
+}
+
+.mentions-legales h1 {
+  text-align: center;
+  color: var(--jaune-dore);
+  font-family: var(--font-titres);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.mentions-legales h2 {
+  color: var(--jaune-dore);
+  font-family: var(--font-titres);
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.mentions-legales p {
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.mentions-legales ul {
+  margin-left: 1.5rem;
+  list-style: disc;
+}
+
+.mentions-legales ul li {
+  margin-bottom: 0.5rem;
+}

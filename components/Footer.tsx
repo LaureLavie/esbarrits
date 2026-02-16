@@ -26,6 +26,11 @@ export default function Footer() {
 
         <div className="footer-bottom">
           <p>© 2026 Les Esbarrits de Cardesse - Tous droits réservés</p>
+          <ul>
+            <li>
+              <a href="/mentions-legales" className="footer-link">Mentions légales</a>
+            </li>
+          </ul>
         </div>
 
     </footer>

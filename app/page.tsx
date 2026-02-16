@@ -27,6 +27,7 @@ export default function Page() {
       <main className="home-page">
         <div className="home-banner">
           <Image src={hero_group} alt="Accueil" className="hero-group" />
+          <button className='Gold' onClick={() => window.location.href = '/contact'}>Contactez-Nous</button>
         </div>
 
         <header className="home-header">

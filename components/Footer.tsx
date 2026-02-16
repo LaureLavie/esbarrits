@@ -20,7 +20,7 @@ export default function Footer() {
           rel="noopener noreferrer"
           aria-label="Page Facebook Les Esbarrits de Cardesse"
         >
-          <Image src={icoFB} alt="Facebook Esbarrits" className="picto Reseaux" width={24} height={24} />
+          <Image src={icoFB} alt="Facebook Esbarrits" className="picto_fb" />
         </a>
         </div>
 

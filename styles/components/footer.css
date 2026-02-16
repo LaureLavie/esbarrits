@@ -34,16 +34,18 @@
   transition: color 0.2s ease, background 0.2s ease;
 }
 
-.footer-fb .picto {
+.footer-fb img.picto_fb {
   width: 36px;
   height: 36px;
-  object-fit: contain;
+  border-radius: 50%;
+  background:var(--jaune-dore);
 }
 
 .footer-fb:hover {
   color: var(--jaune-dore);
   background: rgba(173, 184, 18, 0.04);
 }
+
 
 .footer-bottom {
   margin-top: 1rem;

@@ -4,16 +4,27 @@ import Image from 'next/image';
 import Navbar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import AgendaCard from '@/components/AgendaCard';
-import hero_group from '../public/images/hero_group.png';
-import choraleallemande from '../public/images/choraleallemande.jpg';
+import hero_group from '../public/images/hero_group.webp';
+import choraleallemande from '../public/images/choraleallemande.webp';
+import groupe from '../public/images/groupe.webp';
+import moulin_bouge from '../public/images/moulin_bouge.webp';
+import domaine_bayard from '../public/images/domaine_bayard.webp';
+import chalet from '../public/images/chalet.webp';
+import roussanne from '../public/images/roussanne.webp';
 import '../styles/components/home.css';
-import '../styles/components/evencard.css';
-import groupe from '../public/images/groupe.jpg';
+import '../styles/components/agendacard.css';
 
 export default function Page() {
 
   const sampleEvent = [
-    { id: 1, date: 'Du 11 au 18 juin 2026', location: 'Allemagne', time: 'Toute la semaine', price: 'Libre participation', description: 'Animation & Concert en Allemagne', image: choraleallemande, link: 'https://photos.app.goo.gl/dCQxYKieb6aZ9QN2A' },
+    { id: 1, date: 'Samedi 14 Mars 2026', location: 'Au Moulin Bouge à Monein', time: '12h', price: 'Libre participation', description: 'Animation Repas', image: moulin_bouge },
+    { id: 2, date: 'Du 11 au 18 juin 2026', location: 'Allemagne', time: 'Toute la semaine', price: 'Libre participation', description: 'Animation & Concert en Allemagne', image: choraleallemande },
+    { id: 3, date: 'Samedi 01 Août 2026', location: 'Au Chalet à Salies de Béarn', time: '20h', price: 'Libre participation', description: 'Animation Repas', image: chalet },
+    { id: 4, date: 'Lundi 07 Septembre 2026', location: 'Au Domaine Bayard à Monein', time: '12h', price: 'Libre participation', description: 'Animation Repas', image: domaine_bayard },
+    { id: 5, date: 'Mercredi 09 Septembre 2026', location: 'Au Domaine Bayard à Monein', time: '12h', price: 'Libre participation', description: 'Animation Repas', image: domaine_bayard },
+    { id: 6, date: 'Jeudi 19 Novembre 2026', location: 'EPHAD La Roussanne à Monein', time: '14h30', price: ' - ', description: 'Animation & Chant', image: roussanne },
+
+
   ];
 
   const handleMore = () => {
@@ -36,20 +47,20 @@ export default function Page() {
           <p>les Esbarrits adorent quitter les répétitions pour venir à votre rencontre !</p>
           <p className='textBold'>Bloquez vos agendas : </p>
           
-          <div>
+            <div className="agenda-gallery">
             {sampleEvent.map(evt => (
               <AgendaCard
-                key={evt.id}
-                date={evt.date}
-                location={evt.location}
-                time={evt.time}
-                price={evt.price}
-                description={evt.description}
-                image={evt.image}
-                link={evt.link}
+              key={evt.id}
+              date={evt.date}
+              location={evt.location}
+              time={evt.time}
+              price={evt.price}
+              description={evt.description}
+              image={evt.image}
               />
             ))}
-          </div>
+            </div>
+          
         </header>
         <section className="home-text">
           <h2>Notre répertoire : Entre tradition et création</h2>

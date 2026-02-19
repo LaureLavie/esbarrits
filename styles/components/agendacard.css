@@ -1,4 +1,21 @@
-/* Agenda Card Styles */
+.agenda-gallery {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 1.25rem 0 2rem;
+  justify-items: center;
+}
+
+@media (min-width: 600px){
+  .agenda-gallery{ grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 900px){
+  .agenda-gallery{ grid-template-columns: repeat(3, 1fr); }
+}
+
 .agenda-card {
   display: flex;
   flex-direction: column;
@@ -9,6 +26,7 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   max-width: 400px;
+  height: fit-content;
   margin: 1rem auto;
 }
 
@@ -37,8 +55,8 @@
 }
 
 .agenda-card-image {
-  width: 100%;
-  height: auto;
+  max-width: 100px;
+  height: fit-content;
   object-fit: cover;
   border-radius: 12px;
   margin-bottom: 1rem;

@@ -3,7 +3,7 @@
 import Navbar from '@/components/NavBar';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
-import frise_esbarrits from '../../public/images/frise_esbarrits.png';
+import frise_esbarrits from '../../public/images/frise_esbarrits.webp';
 import '../../styles/components/histoire.css';
 
 export default function HistoirePage() {

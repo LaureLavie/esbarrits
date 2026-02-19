@@ -3,8 +3,8 @@
 import '../styles/components/navBar.css';
 import '../styles/components/footer.css';
 import Image from 'next/image';
-import logo from '../public/images/logo.png';
-import icoFB from '../public/images/icoFB.png';
+import logo from '../public/images/logo.webp';
+import icoFB from '../public/images/icoFB.webp';
 
 export default function Footer() {
   return (

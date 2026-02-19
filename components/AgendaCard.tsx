@@ -9,7 +9,6 @@ type AgendaCardProps = {
   price: string;
   description: string;
   image: any;
-  link?: string;
 };
 
 export default function AgendaCard({
@@ -19,7 +18,6 @@ export default function AgendaCard({
   price,
   description,
   image,
-  link,
 }: AgendaCardProps) {
   const [showPopup, setShowPopup] = useState(false);
 
@@ -41,7 +39,7 @@ export default function AgendaCard({
         <Image src={image} alt={description} className="agenda-card-image" />
         <div className="agenda-card-details">
           <p><span>📍</span> {location}</p>
-          <p>{description}</p>
+          <p><strong>à {time}</strong></p>
         </div>
       </div>
       <div className="agenda-card-footer">

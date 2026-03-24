@@ -12,14 +12,30 @@ export default function RepertoirePage() {
         <header className="repertoire-header">
           <h1>Notre Répertoire</h1>
         </header>
-        <h2>Lous Esbarrits de Cardesse</h2>
+
+        <h2>2017 : Un Plapot de Colors</h2>
+
         <section className="repertoire-text">
           <p>
-            Notre première production “artisanale”. Cette cassette comprend 12
-            chansons traditionnelles béarnaises et françaises et, comme dit plus
-            haut des œuvres complètement crées par le groupe (paroles et
-            musique). Elle n’est plus, hélas, disponible: stock épuisé !!!
+            Une durée de gestation plus proche de l’éléphant que de la souris a
+            été nécessaire pour accoucher de notre nouvel album », a déclaré
+            avec humour Christian Carrasquet, membre du groupe Los Esbarrits.
+            Voici notre deuxième CD « un plapòt de colors ». Ce titre est tiré
+            de la chanson « Saunei deu vielh » dont le texte est un poème
+            d’Hubert Sarrailh-Bengué notre poète local. 
           </p>
+          <p>
+            Il a été mis en musique
+            par Paul-Henri notre chef de chœur. En reprenant ce texte, nous
+            avons voulu rendre hommage à cette figure moneinchonne, bien connue
+            de tous pour sa culture, son amour de la langue béarnaise qu’il a su
+            transmettre par l’écriture de nombreux textes et poèmes. 
+          </p>
+          <p>La jaquette
+            de notre deuxième CD illustre parfaitement son titre “Un plapòt de
+            colors” (une petite tache de couleurs). Christian Lamaison – notre
+            graphiste – a savamment déposé de belles zones colorées sur un fond
+            de portée musicale.</p>
         </section>
         <section className="sound">
           <iframe
@@ -27,11 +43,10 @@ export default function RepertoirePage() {
             height="450"
             style={{ border: 0, overflow: "hidden" }}
             allow="autoplay"
-            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A2177723975&color=%23aa0101&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A2177711177&color=%235ea11d&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
           ></iframe>
         </section>
-
-        <h2>Passa Lo Temps</h2>
+        <h2>2008 : Passa Lo Temps</h2>
 
         <section className="repertoire-text">
           <p>
@@ -69,29 +84,14 @@ export default function RepertoirePage() {
           ></iframe>
         </section>
 
-        <h2>Un Plapot de Colors</h2>
-
+        <h2>1995 : Lous Esbarrits de Cardesse</h2>
         <section className="repertoire-text">
           <p>
-            Une durée de gestation plus proche de l’éléphant que de la souris a
-            été nécessaire pour accoucher de notre nouvel album », a déclaré
-            avec humour Christian Carrasquet, membre du groupe Los Esbarrits.
-            Voici notre deuxième CD « un plapòt de colors ». Ce titre est tiré
-            de la chanson « Saunei deu vielh » dont le texte est un poème
-            d’Hubert Sarrailh-Bengué notre poète local. 
+            Notre première production “artisanale”. Cette cassette comprend 12
+            chansons traditionnelles béarnaises et françaises et, comme dit plus
+            haut des œuvres complètement crées par le groupe (paroles et
+            musique). Elle n’est plus, hélas, disponible: stock épuisé !!!
           </p>
-          <p>
-            Il a été mis en musique
-            par Paul-Henri notre chef de chœur. En reprenant ce texte, nous
-            avons voulu rendre hommage à cette figure moneinchonne, bien connue
-            de tous pour sa culture, son amour de la langue béarnaise qu’il a su
-            transmettre par l’écriture de nombreux textes et poèmes. 
-          </p>
-          <p>La jaquette
-            de notre deuxième CD illustre parfaitement son titre “Un plapòt de
-            colors” (une petite tache de couleurs). Christian Lamaison – notre
-            graphiste – a savamment déposé de belles zones colorées sur un fond
-            de portée musicale.</p>
         </section>
         <section className="sound">
           <iframe
@@ -99,7 +99,7 @@ export default function RepertoirePage() {
             height="450"
             style={{ border: 0, overflow: "hidden" }}
             allow="autoplay"
-            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A2177711177&color=%235ea11d&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A2177723975&color=%23aa0101&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
           ></iframe>
         </section>
       </main>

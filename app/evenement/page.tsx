@@ -17,6 +17,7 @@ import allemand9 from '../../public/images/allemand9.webp';
 
 export default function EventPage() {
   const items = [
+    
     { id: 1, title: 'Esbarrits à Bordeaux - Janvier 2026', excerpt: 'Quelques photos souvenirs de notre animation', img: bordeaux4, link: 'https://photos.app.goo.gl/vdbj8jKyRij7jDJF7' },
     { id: 2, title: 'Portes Ouvertes du Jurançon - Décembre 2025', excerpt: 'Esbarrits aux Portes ouvertes décembre 2025', img: chais1, link: 'https://photos.app.goo.gl/dCQxYKieb6aZ9QN2A' },
     { id: 3, title: 'Castanhas e Bouret - octobre 2025', excerpt: 'Quelques photos de notre animation', img: cardesse7, link: 'https://photos.app.goo.gl/s8KsRfmYMPRdP5uJ8' },

@@ -18,14 +18,13 @@ export default function Page() {
 
   const sampleEvent = [
     //{ id: 1, date: 'Vendredi 22 Mai', location: 'Moulin Bouge à Monein', time: '19h', price: 'Libre participation', description: 'Animation & chant', image: moulin_bouge },
-    { id: 2, date: 'Jeudi 04 Juin', location: 'Au Domaine Bayard à Monein', time: '12h', price: 'Soirée privée', description: 'Animation repas', image: domaine_bayard },
-    { id: 3, date: 'Dimanche 07 Juin', location: 'à Monein', time: '--', price: 'Libre participation', description: 'Animation & Concert', image: groupe },
+   // { id: 2, date: 'Jeudi 04 Juin', location: 'Au Domaine Bayard à Monein', time: '12h', price: 'Soirée privée', description: 'Animation repas', image: domaine_bayard },
+   // { id: 3, date: 'Dimanche 07 Juin', location: 'à Monein', time: '--', price: 'Libre participation', description: 'Animation & Concert', image: groupe },
     { id: 4, date: 'Du 11 au 18 juin 2026', location: 'Allemagne', time: 'Toute la semaine', price: 'Libre participation', description: 'Animation & Concert en Allemagne', image: choraleallemande },
-    { id: 5, date: 'Mardi 28 Juillet', location: 'Au Domaine Bayard à Monein', time: 'Soirée', price: 'Soirée privée', description: 'Animation repas', image: domaine_bayard },
+   // { id: 5, date: 'Mardi 28 Juillet', location: 'Au Domaine Bayard à Monein', time: 'Soirée', price: 'Soirée privée', description: 'Animation repas', image: domaine_bayard },
     { id: 6, date: 'Samedi 01 Août 2026', location: 'Au Chalet à Salies de Béarn', time: '20h', price: 'Libre participation', description: 'Animation Repas', image: chalet },
-    { id: 7, date: 'Mercredi 09 Septembre 2026', location: 'Au Domaine Bayard à Monein', time: '12h', price: 'Soirée privée', description: 'Animation Repas', image: domaine_bayard },
+   // { id: 7, date: 'Mercredi 09 Septembre 2026', location: 'Au Domaine Bayard à Monein', time: '12h', price: 'Soirée privée', description: 'Animation Repas', image: domaine_bayard },
     { id: 8, date: 'Jeudi 19 Novembre 2026', location: 'EPHAD La Roussanne à Monein', time: '14h30', price: ' - ', description: 'Animation & Chant', image: roussanne },
-
 
   ];
 

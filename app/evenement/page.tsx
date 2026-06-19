@@ -18,17 +18,17 @@ import caminada from '../../public/images/caminada.webp';
 
 export default function EventPage() {
   const items = [
-
-    { id: 1, title: 'Esbarrits a la Caminada - 26 Avril 2026', excerpt: 'Voici des photos de notre petite animation au Domaine Montesquiou', img: caminada, link: 'https://photos.app.goo.gl/ywNgVvZFXqdYAiiD8' },
-    { id: 2, title: 'Esbarrits à Bordeaux - Janvier 2026', excerpt: 'Quelques photos souvenirs de notre animation', img: bordeaux4, link: 'https://photos.app.goo.gl/vdbj8jKyRij7jDJF7' },
-    { id: 3, title: 'Portes Ouvertes du Jurançon - Décembre 2025', excerpt: 'Esbarrits aux Portes ouvertes décembre 2025', img: chais1, link: 'https://photos.app.goo.gl/dCQxYKieb6aZ9QN2A' },
-    { id: 4, title: 'Castanhas e Bouret - octobre 2025', excerpt: 'Quelques photos de notre animation', img: cardesse7, link: 'https://photos.app.goo.gl/s8KsRfmYMPRdP5uJ8' },
-    { id: 5, title: 'Esbarrits à Laruns - Mai 2025', excerpt: 'Voici l\'album photo de notre concert à Laruns', img: laruns5, link: 'https://photos.app.goo.gl/WNSsA6L1XbrggeP97' },
-    { id: 6, title: 'Esbarrits à Esquiule - Juin 2025', excerpt: 'Retour en images sur notre concert à Esquiule', img: esquiule6, link: 'https://photos.app.goo.gl/XRH97ZRizh4TLLWV7' },
-    { id: 7, title: 'Esbarrits à Asson avec Esbagats et En Daban - novembre 2024', excerpt: 'Retour en images du concert à Asson', img: asson8, link: 'https://photos.app.goo.gl/y9qZABbdcTJ7SxSQ7' },
-    { id: 8, title: 'Concert avec chorale allemande - aout 2024', excerpt: 'Quelques photos du concert avec une chorale allemande', img: allemand9, link: 'https://photos.app.goo.gl/BoqAn721vP6gEJD47' },
-    { id: 9, title: 'Soirée Chataîgnes & Bourret - Novembre 2023', excerpt: 'Retour en images sur notre animation', img: bourret2, link: 'https://photos.app.goo.gl/MJZomYkwfWzW4ndDA' },
-    { id: 10, title: 'Festival des Vallées - avril 2023', excerpt: 'Retour en images sur notre prestation à Oloron', img: oloron3, link: 'https://photos.app.goo.gl/DgKc7xEzp9xUfX2T8' },
+    { id: 1, title: 'Esbarrits en Allemagne - 11 au 18 Juin 2026', excerpt: 'VExtraits vidéos de notre séjour en Allemagne', img: allemand9, link: 'https://photos.app.goo.gl/NKEktfmUkR8JJjoWA' },
+    { id: 2, title: 'Esbarrits a la Caminada - 26 Avril 2026', excerpt: 'Voici des photos de notre petite animation au Domaine Montesquiou', img: caminada, link: 'https://photos.app.goo.gl/ywNgVvZFXqdYAiiD8' },
+    { id: 3, title: 'Esbarrits à Bordeaux - Janvier 2026', excerpt: 'Quelques photos souvenirs de notre animation', img: bordeaux4, link: 'https://photos.app.goo.gl/vdbj8jKyRij7jDJF7' },
+    { id: 4, title: 'Portes Ouvertes du Jurançon - Décembre 2025', excerpt: 'Esbarrits aux Portes ouvertes décembre 2025', img: chais1, link: 'https://photos.app.goo.gl/dCQxYKieb6aZ9QN2A' },
+    { id: 5, title: 'Castanhas e Bouret - octobre 2025', excerpt: 'Quelques photos de notre animation', img: cardesse7, link: 'https://photos.app.goo.gl/s8KsRfmYMPRdP5uJ8' },
+    { id: 6, title: 'Esbarrits à Laruns - Mai 2025', excerpt: 'Voici l\'album photo de notre concert à Laruns', img: laruns5, link: 'https://photos.app.goo.gl/WNSsA6L1XbrggeP97' },
+    { id: 7, title: 'Esbarrits à Esquiule - Juin 2025', excerpt: 'Retour en images sur notre concert à Esquiule', img: esquiule6, link: 'https://photos.app.goo.gl/XRH97ZRizh4TLLWV7' },
+    { id: 8, title: 'Esbarrits à Asson avec Esbagats et En Daban - novembre 2024', excerpt: 'Retour en images du concert à Asson', img: asson8, link: 'https://photos.app.goo.gl/y9qZABbdcTJ7SxSQ7' },
+    { id: 9, title: 'Concert avec chorale allemande - aout 2024', excerpt: 'Quelques photos du concert avec une chorale allemande', img: allemand9, link: 'https://photos.app.goo.gl/BoqAn721vP6gEJD47' },
+    { id: 10, title: 'Soirée Chataîgnes & Bourret - Novembre 2023', excerpt: 'Retour en images sur notre animation', img: bourret2, link: 'https://photos.app.goo.gl/MJZomYkwfWzW4ndDA' },
+    { id: 11, title: 'Festival des Vallées - avril 2023', excerpt: 'Retour en images sur notre prestation à Oloron', img: oloron3, link: 'https://photos.app.goo.gl/DgKc7xEzp9xUfX2T8' },
   ];
 
   return (

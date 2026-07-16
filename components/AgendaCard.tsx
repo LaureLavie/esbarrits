@@ -35,7 +35,7 @@ export default function AgendaCard({
       <div className="agenda-card-media">
         <Image src={image} alt={description} className="agenda-card-image" />
         <div className="agenda-card-date">
-          <span>{date}</span>
+          <span><strong>{date}</strong></span>
         </div>
       </div>
 

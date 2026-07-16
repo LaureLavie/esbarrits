@@ -79,9 +79,9 @@
 .agenda-card-date span {
   display: inline-block;
   font-family: var(--font-corps);
-  font-size: 2rem;
+  font-size: 1rem;
   letter-spacing: 0.04em;
-  color: #fff;
+  color: var(--noir-charbon);
   text-transform: uppercase;
   border-left: 2px solid var(--jaune-dore);
   padding-left: 0.6rem;

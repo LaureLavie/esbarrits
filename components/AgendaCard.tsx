@@ -31,19 +31,25 @@ export default function AgendaCard({
   };
 
   return (
-    <div className="agenda-card">
-      <div className="agenda-card-header">
-        <h3>{date}</h3>
-      </div>
-      <div className="agenda-card-body">
+    <div className="agenda-card" onClick={handlePopupOpen}>
+      <div className="agenda-card-media">
         <Image src={image} alt={description} className="agenda-card-image" />
-        <div className="agenda-card-details">
-          <p><span>📍</span> {location}</p>
-          <p><strong>à {time}</strong></p>
+        <div className="agenda-card-date">
+          <span>{date}</span>
         </div>
       </div>
-      <div className="agenda-card-footer">
-        <button className="agenda-card-button" onClick={handlePopupOpen}>Plus d'infos</button>
+
+      <div className="agenda-card-body">
+        <div className="agenda-card-details">
+          <p className="agenda-card-location">
+            <span className="agenda-card-icon">📍</span> {location}
+          </p>
+          <p className="agenda-card-time">à {time}</p>
+        </div>
+
+        <button className="agenda-card-button" onClick={handlePopupOpen}>
+          Plus d&apos;infos
+        </button>
       </div>
 
       {showPopup && (

@@ -3,7 +3,7 @@
   align-content: center;
   justify-content: center;
   grid-template-columns: 1fr;
-  gap: 1rem;
+  gap: 1.75rem;
   margin: 1.25rem 0 2rem;
   justify-items: center;
 }
@@ -16,92 +16,144 @@
   .agenda-gallery{ grid-template-columns: repeat(3, 1fr); }
 }
 
+/* ---------- CARD ---------- */
+
 .agenda-card {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(90deg, var(--beige-clair), #f0e1b2, var(--beige-clair));
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  background: #fffdf8;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 6px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
   cursor: pointer;
-  max-width: 400px;
-  height: fit-content;
-  margin: 1rem auto;
+  max-width: 360px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .agenda-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12);
 }
 
-.agenda-card-header {
-  background-color: var(--rouge-bernais);
-  border-radius: 12px 12px 0 0;
-  width:100%;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  font-family: var(--font-titres);
-  font-size: 1.5rem;
-  font-weight: bold;
+/* ---------- IMAGE + DATE ---------- */
+
+.agenda-card-media {
+  position: relative;
+  width: 100%;
+  height: 190px;
+  overflow: hidden;
 }
+
+.agenda-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.agenda-card:hover .agenda-card-image {
+  transform: scale(1.06);
+}
+
+/* voile discret pour la lisibilité de la date */
+.agenda-card-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 55%, rgba(0,0,0,0.55) 100%);
+  pointer-events: none;
+}
+
+.agenda-card-date {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 0.6rem 1.1rem 0.7rem;
+  z-index: 2;
+}
+
+.agenda-card-date span {
+  display: inline-block;
+  font-family: var(--font-titres);
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+  color: #fff;
+  text-transform: uppercase;
+  border-left: 2px solid var(--jaune-dore);
+  padding-left: 0.6rem;
+}
+
+/* ---------- CORPS ---------- */
 
 .agenda-card-body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
-}
-
-.agenda-card-image {
-  max-width: 100px;
-  height: fit-content;
-  object-fit: cover;
-  border-radius: 12px;
-  margin-bottom: 1rem;
+  gap: 1rem;
+  padding: 1.4rem 1.3rem 1.5rem;
 }
 
 .agenda-card-details {
+  width: 100%;
   text-align: left;
   font-family: var(--font-corps);
   color: var(--noir-charbon);
-  font-size: 1rem;
-  line-height: 1.5;
 }
 
-.agenda-card-details p {
-  margin: 0.5rem 0;
+.agenda-card-location {
+  margin: 0 0 0.35rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
 }
 
-.agenda-card-footer {
-  text-align: center;
-  padding: 1rem;
+.agenda-card-icon {
+  color: var(--rouge-bernais);
+  margin-right: 0.3rem;
 }
+
+.agenda-card-time {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--rouge-bernais);
+}
+
+/* ---------- BOUTON ---------- */
 
 .agenda-card-button {
-  background: var(--jaune-dore);
+  align-self: center;
+  background: transparent;
   color: var(--noir-charbon);
-  border: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  font-weight: bold;
+  border: 1px solid var(--noir-charbon);
+  padding: 0.55rem 1.6rem;
+  border-radius: 2px;
+  font-family: var(--font-corps);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 .agenda-card-button:hover {
-  background: #f8d668;
+  background: var(--rouge-bernais);
+  border-color: var(--rouge-bernais);
+  color: #fff;
 }
 
-/* Popup styles */
+/* ---------- POPUP ---------- */
+
 .popup-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7); 
+  background: rgba(0, 0, 0, 0.7);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,10 +162,10 @@
 }
 
 .popup-content {
-  background: var(--beige-clair); 
-  padding: 2rem;
-  border-radius: 16px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3); 
+  background: #fffdf8;
+  padding: 2.2rem;
+  border-radius: 8px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
   max-width: 600px;
   width: 90%;
   position: relative;
@@ -125,11 +177,11 @@
 
 .popup-close {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 12px;
+  right: 14px;
   background: none;
   border: none;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   cursor: pointer;
   color: var(--rouge-bernais);
   transition: color 0.3s ease;
@@ -140,34 +192,28 @@
 }
 
 .popup-content h3 {
-  font-family: var(--font-corps);
-  font-size: 1.5rem;
+  font-family: var(--font-titres);
+  font-size: 1.4rem;
+  letter-spacing: 0.03em;
   color: var(--rouge-bernais);
   font-weight: bold;
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
+  text-transform: uppercase;
 }
 
 .popup-content p {
   margin: 0.5rem 0;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   line-height: 1.6;
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 @keyframes slideIn {
-  from {
-    transform: translateY(-20px);
-  }
-  to {
-    transform: translateY(0);
-  }
+  from { transform: translateY(-20px); }
+  to { transform: translateY(0); }
 }

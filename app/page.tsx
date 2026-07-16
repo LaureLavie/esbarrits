@@ -4,22 +4,19 @@ import Image from 'next/image';
 import Navbar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import AgendaCard from '@/components/AgendaCard';
+import logo from '../public/images/logo.webp';
 import hero_group from '../public/images/hero_group.webp';
-import choraleallemande from '../public/images/choraleallemande.webp';
 import groupe from '../public/images/groupe.webp';
-import chalet from '../public/images/chalet.webp';
-import roussanne from '../public/images/roussanne.webp';
-import moulin_bouge from '../public/images/moulin_bouge.webp';
 import '../styles/components/home.css';
 import '../styles/components/agendacard.css';
 
 export default function Page() {
 
   const sampleEvent = [
-    { id: 1, date: 'Samedi 01 Août 2026', location: 'Au Chalet à Salies de Béarn', time: '20h', price: 'Libre participation', description: 'Animation Repas', image: chalet },
-    { id: 2, date: 'Vendredi 07 Août', location: 'Animation du Marché de Cardesse', time: '17h', price: 'Gratuit', description: 'Animation & chant', image: groupe },
-    { id: 3, date: 'Samedi 28 Août', location: 'Gurs', time: '19h', price: 'Gratuit', description: 'Soirée Animation tapas', image: hero_group },
-    { id: 4, date: 'Jeudi 19 Novembre 2026', location: 'EPHAD La Roussanne à Monein', time: '14h30', price: ' - ', description: 'Animation & Chant', image: roussanne },
+    { id: 1, date: 'Samedi 01 Août 2026', location: 'Au Chalet à Salies de Béarn', time: '20h', price: 'Libre participation', description: 'Animation Repas', image: logo },
+    { id: 2, date: 'Vendredi 07 Août', location: 'Animation du Marché de Cardesse', time: '17h', price: 'Gratuit', description: 'Animation & chant', image: logo },
+    { id: 3, date: 'Samedi 28 Août', location: 'Gurs', time: '19h', price: 'Gratuit', description: 'Soirée Animation tapas', image: logo },
+    { id: 4, date: 'Jeudi 19 Novembre 2026', location: 'EPHAD La Roussanne à Monein', time: '14h30', price: ' Évènement privé ', description: 'Animation & Chant', image: logo },
 
   ];
 

@@ -63,29 +63,26 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(0,0,0,0) 55%, rgba(0,0,0,0.55) 100%);
+  background: linear-gradient(180deg, rgba(0,0,0,0) 5%, rgba(0,0,0,0.7) 70%);
   pointer-events: none;
 }
 
 .agenda-card-date {
   position: absolute;
-  left: 0;
-  bottom: 0;
+  left: 0px;
+  bottom: 0px;
   width: 100%;
   padding: 0.6rem 1.1rem 0.7rem;
   z-index: 2;
-}
-
-.agenda-card-date span {
-  display: inline-block;
-  font-family: var(--font-corps);
+  font-family: var(--font-titres);
+  color: var(--color-white);
+  font-weight: bold;
   font-size: 1rem;
   letter-spacing: 0.04em;
-  color: var(--rouge-bernais);
-  text-transform: uppercase;
-  border-left: 2px solid var(--jaune-dore);
-  padding-left: 0.6rem;
+  justify-items: center;
+  align-items: center;
 }
+
 
 /* ---------- CORPS ---------- */
 

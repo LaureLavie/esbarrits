@@ -32,7 +32,7 @@ export async function POST(request: NextRequest) {
     // Email à l'administrateur
     const adminMailOptions = {
       from: SMTP_USER,
-      to: 'laure.lavie@gmail.com', 
+      to: ['mylene.lavie@gmail.com', 'laure.lavie@gmail.com'],
       subject: `Nouvelle demande de contact - ${requestType}`,
       html: `
         <h2>Nouvelle demande de contact</h2>

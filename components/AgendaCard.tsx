@@ -41,8 +41,8 @@ export default function AgendaCard({
 
       <div className="agenda-card-body">
         <div className="agenda-card-details">
-          <p className="agenda-card-location">{location}
-          </p>
+          <p className="agenda-card-description">{description}</p>
+          <p className="agenda-card-location">{location}</p>
           <p className="agenda-card-time">à {time}</p>
         </div>
 

@@ -119,6 +119,13 @@
   color: var(--rouge-bernais);
 }
 
+.agenda-card-description {
+  margin: 0 0 0.35rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--jaune-dore);
+}
+
 /* ---------- BOUTON ---------- */
 
 .agenda-card-button {

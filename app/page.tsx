@@ -13,10 +13,11 @@ import '../styles/components/agendacard.css';
 export default function Page() {
 
   const sampleEvent = [
-    { id: 1, date: 'Samedi 01 Août 2026', location: 'Au Chalet à Salies de Béarn', time: '20h', price: 'Libre participation', description: 'Animation Repas', image: logo },
-    { id: 2, date: 'Vendredi 07 Août', location: 'Animation du Marché de Cardesse', time: '17h', price: 'Gratuit', description: 'Animation & chant', image: logo },
-    { id: 3, date: 'Samedi 28 Août', location: 'Gurs', time: '19h', price: 'Gratuit', description: 'Soirée Animation tapas', image: logo },
-    { id: 4, date: 'Jeudi 19 Novembre 2026', location: 'EPHAD La Roussanne à Monein', time: '14h30', price: ' Évènement privé ', description: 'Animation & Chant', image: logo },
+    //{ id: 1, date: 'Samedi 01 Août 2026', location: 'Au Chalet à Salies de Béarn', time: '20h', price: 'Libre participation', description: 'Animation Repas', image: logo },
+    { id: 2, date: 'Vendredi 07 Août', location: 'Cardesse', time: '17h', price: 'Gratuit', description: 'Animation Fêtes de Cardesse', image: logo },
+    { id: 3, date: 'Samedi 22 Août', location: 'Gurs', time: '19h', price: 'Gratuit', description: 'Soirée Animation tapas', image: logo },
+    {id:4, date: 'Dimanche 06 Septembre', location: 'Laroin', time: '12h30', price: 'Gratuit', description: 'Animation Apéritif Fêtes de Laroin', image: logo },
+    { id: 5, date: 'Jeudi 19 Novembre 2026', location: 'EPHAD La Roussanne à Monein', time: '14h30', price: ' Évènement privé ', description: 'Animation & Chant', image: logo },
 
   ];
 

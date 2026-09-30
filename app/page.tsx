@@ -14,7 +14,7 @@ export default function Page() {
 
   const sampleEvent = [
     //{ id: 1, date: 'Samedi 01 Août 2026', location: 'Au Chalet à Salies de Béarn', time: '20h', price: 'Libre participation', description: 'Animation Repas', image: logo },
-    { id: 2, date: 'Dimanche 11 Octobre', location: 'Cardesse', time: '17h', price: '10€', description: 'Soirée Chataîgnes & Bourret', image: logo },
+    { id: 2, date: 'Dimanche 11 Octobre', location: 'Cardesse', time: '16h', price: '10€', description: 'Soirée Chataîgnes & Bourret', image: logo },
     { id: 3, date: 'Mercredi 14 Octobre', location: 'Ehpad de Morlàas', time: '15h', price: 'Évènement privé', description: 'Animation & Chant', image: logo },
     {id:4, date: 'Mardi 17 Novembre', location: 'Amicale des retraités de Habas', time: '15h', price: 'Évènement privé', description: 'Animation & Chant ', image: logo },
     { id: 5, date: 'Jeudi 19 Novembre 2026', location: 'EPHAD La Roussanne à Monein', time: '14h30', price: ' Évènement privé ', description: 'Animation & Chant', image: logo },
